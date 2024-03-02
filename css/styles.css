@@ -1,0 +1,438 @@
+/* ----------------------------io------------------------------------------------- */
+body {
+    background: #FBD3E9;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #BB377D, #FBD3E9);
+    /*Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #BB377D, #FBD3E9);
+    /*W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.navbar {
+    padding: 2rem;
+    background-color: rgb(174, 185, 255);
+}
+
+/* Alinear a la izquierda los elementos */
+.navbar-collapse {
+    align-items: center;
+    justify-content: space-between;
+    font-size: 15px;
+}
+
+/* Adaptable responsivo */
+
+/* Para dispositivos con un ancho máximo de 767px vamos a ocultar la imagen */
+@media screen and (max-width: 767px) {
+    .navbar-brand {
+        display: none;
+    }
+}
+
+/* Estilos generales */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-family: 'Satisfy', cursive;
+
+}
+
+/* Seccion Hero / Principal */
+.hero {
+    /* background-color: rgb(255, 254, 254); */
+    min-height: 450px;
+    text-align: center;
+}
+
+.hero-principal {
+    padding: 3rem;
+
+}
+
+/* REDONDEAR LA IMAGEN */
+.hero-imagen-desarrollador {
+    width: 200px;
+    height: 200px;
+    /* border-radius: 50%; REDONDEAR LA IMAGEN */
+    margin: 20px;
+}
+
+/* ESTILOS PARA H2 */
+.hero-principal h2 {
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 0.491);
+}
+
+/* Imagen de referencia */
+.hero-inferior-imagen {
+    max-width: 350px;
+}
+
+@media screen and (max-width: 700px) {
+    .hero-inferior-imagen {
+        max-width: 250px;
+    }
+}
+
+/*--------------SOBRE NOSOTROS ------------------------------------------------------*/
+.seccion-oscura {
+    color: rgb(20, 20, 20);
+    /* ----------------------------------- */
+    border: 2px solid rgb(184, 255, 139);
+    /* background-color:#f1ffee;  */
+}
+/* --------------------- MODIFIQUE PARA CONOCENOS ------------------------------ */
+.sobre-mi {
+    /* ----------altura del fondo negro ---------- */
+    /* height: 350px; */
+    height: 550px;
+    padding: 10px;
+}
+.iconos-redes-sociales-conocenos a{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center; /* Elementos alineados al centro*/
+    justify-content: center;
+    padding: 2px;
+    margin: 5px;
+    border: 2px solid #000000;
+    border-radius: 50%;
+    transition: all 0.3s ease-in;
+}
+.iconos-redes-sociales-conocenos i{
+    color:rgb(0, 0, 0);
+    font-size: 2.5rem;
+    transition: all 0.2s ease-in;
+}
+.iconos-redes-sociales-conocenos a:hover{
+    background-color: rgb(255, 255, 255);
+    border: 2px solid blue;
+}
+.iconos-redes-sociales-conocenos a:hover i{
+    color: black;
+}
+
+.sobre-mi .contenedor {
+    max-width: 600px;
+    text-align: center;
+}
+
+.seccion-titulo {
+    font-size: 2rem;
+    padding: 15px 0;
+    font-family: 'Rubik Dirt', cursive;
+}
+
+.seccion-texto {
+    font-size: 1.2rem;
+
+}
+
+/* Nuestros Postres----------------------------------------------------------------- */
+.experiencia {
+    padding: 40px 40px 60px 40px;
+}
+
+.seccion-clara {
+    color: black;
+    /* background-color: white; */
+    border: 3px solid orange;
+}
+
+.experiencia .row div {
+    /* height: 250px; ------------------------*/
+    background-color: #ffe8fe;
+    border: 3px solid orange;
+}
+
+.experiencia-titulo {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.experiencia img {
+    padding: 8px 19 px;
+    /* border-radius: 150%; */
+}
+
+.badges-contenedor {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+    padding: 5px;
+}
+
+.badges {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.experiencia .columna {
+    padding: 20px;
+    border: 2px solid #808080;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: all 0.4s ease-in;
+}
+
+/* Cuando el cursor este encima */
+.experiencia .columna:hover {
+    color: white;
+    background-color: rgb(20, 20, 20);
+}
+
+/* Resaltar Hover para barra de navegacion */
+li a:hover {
+    background-color: black;
+    width: 140px;
+    text-align: center;
+    border: 3px solid rgb(200, 255, 200);
+    border-radius: 8%;
+}
+
+/* PROYECTOS (POSTRES HECHOS RECIENTEMENTE) ----------------------------------------*/
+.proyectos-recientes {
+    padding: 40px;
+}
+
+.texto-negro {
+    color: black;
+}
+
+.texto-blanco {
+    color: white;
+}
+
+.seccion-descripcion {
+    font-size: 1.2rem;
+    color: gray;
+}
+
+.proyectos-recientes img {
+    height: 100%;
+    width: 100%;
+    border: 2px solid rgb(255, 21, 21);
+    border-radius: 20px;
+    display: block;
+    transition: all 0.4s ease;
+}
+
+
+
+.proyectos-contenedor {
+    padding-top: 60px;
+    margin-bottom: 40px;
+}
+
+/* Contenido que se coloca sobre una imagen */
+.overlay {
+    transition: all 0.2s ease;
+    opacity: 0;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding-top: 20%;
+}
+
+.overlay p {
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 0;
+    font-family: 'Acme', sans-serif;
+}
+
+/* cuando el cursor se coloque sobre un proyecto, la imagen correspondiente cambia su opacidad */
+.proyecto:hover img {
+    opacity: 0.2;
+}
+
+/* cuando el cursor este sobre el elemento proyecto se le da el overlay */
+.proyecto:hover .overlay {
+    opacity: 1;
+
+}
+
+.proyecto {
+    position: relative;
+}
+
+.overlay .iconos-contenedor {
+    /* Iconos en una sola fila*/
+    display: flex;
+}
+
+.overlay i {
+    color: black;
+    font-size: 40px;
+    margin: 10px;
+}
+
+/* TESTIMONIOS --------------------------------------------------------------------- */
+.testimonios {
+    padding: 80px 40 px 80px 40px;
+}
+
+.testimonios .carousel {
+    max-width: 800px;
+}
+
+.carousel-tamano {
+    height: 100%;
+}
+
+
+.carousel-item .container{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonio-imagen{
+    height: 150px;
+    width: 150px;
+    margin: 10px 10px 20px 10px;
+}
+.testimonio-texto{
+    max-width: 70%;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+}
+.testimonio-info{
+    font-weight: bold;
+    text-align: center;
+}
+.testimonio-info p{
+    margin:0;
+}
+.testimonio-footer .cliente{
+    font-size: 1.2rem;
+}
+.testimonio-info .cargo{
+    font-size:0.9rem;
+    color: rgb(77, 86, 249);
+}
+/* para dispositivos mas pequeños que 800 px de ancho */
+@media screen and (max-width:800px) {
+    .testimonio-imagen{
+        height: 120px;
+        width: 120px;
+    
+    }
+    .testimonio-texto{
+        max-width: 70%;
+        font-size: 15px;
+    }    
+}
+
+/* ESTILOS PARA CONTACTO  --------------------------- */
+.contacto .container{
+    max-width: 1100px;
+    min-height: 80px;
+    padding: 20px;
+}
+/* para que el elemento se vea que está entre una seccion y otra ------- */
+.container .rectangulo {
+    margin-top: -5rem;
+    background-color: rgb(39, 39, 255);
+    border-radius: 10px;
+    /* agregar una sombra  */
+    box-shadow: 0px 1px 4px 1px;
+}
+
+.contacto .row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.contacto .descripcion {
+    color: white;
+    font-size:1.2rem;
+}
+/* dar estilos al botón */
+.contacto button{
+    color:white;
+    font-weight: bold;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 1.25em 2em;
+    margin:10px;
+    border-radius: 100px;
+    transition: all 0.2s ease-in-out;
+} 
+.contacto button:hover{
+    background-color: white;
+    color: black;
+}
+.contacto button:hover i{
+    color: black;
+}
+.contacto button i{
+    color: white;
+    /* tamaño de la letra */
+    font-size: 1.3rem;
+    transition: all 0.2s ease-in-out;
+}
+
+/* ESTILOS AL FOOTER -------------------------------------------------- */
+footer{
+    min-height: 200px;
+}
+.footer-texto{
+    font-size: 0.9rem;
+    padding: 20px;
+    margin-bottom: 30px;
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Pacifico', cursive;
+    color: white;
+    margin: 0px;
+}
+/* Estilos a los iconos para que no se vean juntos */
+.iconos-redes-sociales a{
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center; /* Elementos alineados al centro*/
+    justify-content: center;
+    padding: 2px;
+    margin: 5px;
+    border: 2px solid white;
+    border-radius: 50%;
+    transition: all 0.3s ease-in;
+}
+.iconos-redes-sociales i{
+    color:white;
+    font-size: 1.5rem;
+    transition: all 0.2s ease-in;
+}
+.iconos-redes-sociales a:hover{
+    background-color: white;
+    border: 2px solid blue;
+}
+.iconos-redes-sociales a:hover i{
+    color: black;
+}
+/* Derechos de autor */
+.derechos-de-autor{
+    font-size: 10px;
+    color: gray;
+    padding: 20px;
+}

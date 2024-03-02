@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <!-- MetaDatos -->
+  <meta charset="UTF-8">
+  <meta name="author" content="Postrecitos D.M">
+  <!-- descripcion en Metadatos -->
+  <meta name="description" content="Pagina Web de Postres">
+  <!-- Palabras claves  -->
+  <meta name="keywoords" content="Repostereria, pasteles, postrecitos, panaderia, tortas, dulces, panaderia">
+  <!-- Como se va a ajustar la ventana del navegador en distintos dispositivos, viene por defecto-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Postrecitos Deysi</title>
+  <!-- Personalizar el icono del navegador -->
+  <link rel="icon" type="image-x-icon" href="imagenes/postre.webp">
+  <!-- Incluir Bootstrap Icons con CDN-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <!-- importamos los archivos CSS y Bootstrap-->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- ACCESO AL ESTILO DE LETRAS DE GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,200&family=Pacifico&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <!-- Barra de Navegacion -->
+  <!-- posición fija del nav-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-navbar" style="font-family: 'Acme', sans-serif;">
+    <!--Personalizar-->
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse py-2" id="navbar-toggler">
+        <a class="navbar-brand" href="#">
+          <img src="imagenes/portada.webp" width="70" alt="Logo de la Página WEb"> <!-- Personalizar -->
+        </a>
+
+        <ul class="navbar-nav d-flex justify-content-center align-items-center">
+          <li class="nav-item">
+
+            <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#presentacion">Presentación</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#nuestros-postres">Nuestros Postres</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="nuestra_cocina.html">Nuestra Cocina</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#nosotros">Nosotros</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- CARRUSEL -->
+  <div class="container-flex" style="width:75%; margin: 0 auto; display: block;"> <!-- posición fija del nav-->
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner py-4" ">
+        <div class=" carousel-item active" data-bs-interval="2000">
+        <img src="imagenes/Presentación1.webp" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="imagenes/NUESTRA COCINA.webp" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="imagenes/pasteles_cariño.webp" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  </div>
+
+  <!-- SECCION HERO (SECCION PRINCIPAL) -------- -->
+  <section class="hero align-items-stretch" id="presentacion">
+    <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
+      <!-- REDONDEAR LA IMAGEN -->
+      <img class="hero-imagen-desarrollador rounded-circle" src="imagenes/portada.webp" alt="Foto de portada">
+      <h1>¡Bienvenidos al rincón de los antojos!</h1>
+      <h2>Donde los postres se convierten en realidades dulces</h2>
+    </div>
+
+    <!-- postre de referencia -->
+    <div class="hero-inferior">
+      <img class="hero-inferior-imagen rounded-pill img-fluid py-3" src="imagenes/receta-torta-helada.webp"
+        alt="Postre de referencia">
+    </div>
+  </section>
+
+  <!-- Nuestros Postres  -->
+  <section class="experiencia seccion-clara py-10" id="nuestros-postres" style="margin-top: 100px;">
+    <div class="container text-center ">
+      <!-- filas -->
+      <div class="row">
+        <!-- columnas -->
+        <!-- pie de manzan -->
+        <div class="columna col-12 col-md-4">
+          <img src="imagenes/pie-de-manzana.png" alt="">
+          <p class="experiencia-titulo">PIE DE MANZANA</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi itaque magnam, mollitia rerum voluptatum
+            quod fugiat iste ratione corrupti facere qui in quis repellendus ad magni ipsum exercitationem tempora
+            sint?</p>
+          <div class="badges-contenedor ">
+            <span class="badge rounded-pill text-bg-warning">Rico</span>
+            <span class="badge rounded-pill text-bg-warning">Delicioso</span>
+          </div>
+        </div>
+        <!-- muffins -->
+        <div class="columna col-12 col-md-4">
+          <img src="imagenes/Muffis.png" alt="">
+          <p class="experiencia-titulo">MUFIS</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi itaque magnam, mollitia rerum voluptatum
+            quod fugiat iste ratione corrupti facere qui in quis repellendus ad magni ipsum exercitationem tempora
+            sint?</p>
+          <div class="badges-contenedor ">
+            <span class="badge rounded-pill text-bg-warning">Sabroso</span>
+            <span class="badge rounded-pill text-bg-warning">Exquisito</span>
+          </div>
+        </div>
+        <!-- Alfajores -->
+        <div class="columna col-12 col-md-4">
+          <img src="imagenes/alfajor.png" alt="">
+          <p class="experiencia-titulo">ALFAJORES</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi itaque magnam, mollitia rerum voluptatum
+            quod fugiat iste ratione corrupti facere qui in quis repellendus ad magni ipsum exercitationem tempora
+            sint?</p>
+          <div class="badges-contenedor ">
+            <span class="badge rounded-pill text-bg-warning">Irresistible</span>
+            <span class="badge rounded-pill text-bg-warning">Tentador</span>
+          </div>
+        </div>
+      </div>
+      <!-- --------------------------------------------- -->
+      <div class="row">
+        <!-- Torta Helada -->
+        <div class="columna col-12 col-md-4">
+          <img src="imagenes/torta_helada.png" alt="">
+          <p class="experiencia-titulo">TORTA HELADA</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi itaque magnam, mollitia rerum voluptatum
+            quod fugiat iste ratione corrupti facere qui in quis repellendus ad magni ipsum exercitationem tempora
+            sint?</p>
+          <div class="badges-contenedor ">
+            <span class="badge rounded-pill text-bg-warning">Dulce</span>
+            <span class="badge rounded-pill text-bg-warning">Aromático</span>
+          </div>
+        </div>
+        <!-- Empanadas rellenas -->
+        <div class="columna col-12 col-md-4">
+          <img src="imagenes/empanada.png" alt="">
+          <p class="experiencia-titulo">EMPANADAS RELLENAS</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi itaque magnam, mollitia rerum voluptatum
+            quod fugiat iste ratione corrupti facere qui in quis repellendus ad magni ipsum exercitationem tempora
+            sint?</p>
+          <div class="badges-contenedor ">
+            <span class="badge rounded-pill text-bg-warning">Exquisito</span>
+            <span class="badge rounded-pill text-bg-warning">Delicioso</span>
+          </div>
+        </div>
+        <!-- queques -->
+        <div class="columna col-12 col-md-4">
+          <img src="imagenes/queque.png" alt="">
+          <p class="experiencia-titulo">QUEQUES</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi itaque magnam, mollitia rerum voluptatum
+            quod fugiat iste ratione corrupti facere qui in quis repellendus ad magni ipsum exercitationem tempora
+            sint?</p>
+          <div class="badges-contenedor ">
+            <span class="badge rounded-pill text-bg-warning">Irresistible</span>
+            <span class="badge rounded-pill text-bg-warning">Sorprendente</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIOSSS .............. -->
+  <section class="testimonios seccion-clara" id="nosotros">
+    <h2 class="seccion-titulo"> Testimonios </h2>
+    <h3 class="seccion-descripcion" style="color: rgb(29, 60, 7);"> Estas son algunas referencias de nuestros clientes
+    </h3>
+    <!-- CARRUSEL Nota: COlocar solo textos pequeños-->
+    <div id="testimonios-carrusel" class="carousel carousel-dark slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+          aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="container">
+            <img class="testimonio-imagen rounded-circle" src="imagenes/testimonio_1.webp" alt="Foto de Ana">
+            <p class="testimonio-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit voluptatem in
+              totam ipsum ex aliquid ipsa sapiente laboriosam molestias saepe. Dignissimos non rerum aliquid
+              consequuntur dolorem voluptatibus maiores corporis fugiat? Lorem, ipsum dolor sit amet consectetur </p>
+            <div class="testimonio-info">
+              <p class="ciente">Ana</p>
+              <p class="cargo">Postre sorpresa para una persona especial</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <img class="testimonio-imagen rounded-circle" src="imagenes/testimonio_2.webp" alt="Foto de Adriana">
+            <p class="testimonio-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit voluptatem in
+              totam ipsum ex aliquid ipsa sapiente laboriosam molestias saepe. Lorem ipsum, dolor sit amet consectetur
+              adipisicing elit. Quos quasi ipsa officia ratione illo ipsam perferendis distinctio. </p>
+            <div class="testimonio-info">
+              <p class="ciente">Ana</p>
+              <p class="cargo">Endulza la vida</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <img class="testimonio-imagen rounded-circle" src="imagenes/testimonio_3.webp" alt="Foto de Hans">
+            <p class="testimonio-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit voluptatem in
+              totam ipsum ex aliquid ipsa sapiente laboriosam </p>
+            <div class="testimonio-info">
+              <p class="ciente">Ana</p>
+              <p class="cargo">Siempre es bueno darse un gustito</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <img class="testimonio-imagen rounded-circle" src="imagenes/testimonio_4.webp" alt="Foto de Hans">
+            <p class="testimonio-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit voluptatem in
+              totam ipsum ex aliquid ipsa sapiente laboriosam </p>
+            <div class="testimonio-info">
+              <p class="ciente">Ana</p>
+              <p class="cargo">Siempre es bueno darse un gustito</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+  </section>
+
+
+  <!-- NOSOTROS (CONOCENOS) -->
+  <div class="container" style="margin-top:2%; margin-bottom: 2%;">
+    <section class="sobre-mi seccion-oscura ">
+      <div class="contenedor">
+        <h2 class="seccion-titulo">CONOCENOS ...</h2>
+        <p class="seccion-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quo eum, molestiae
+          dolorum asperiores ipsam, ratione possimus odio quod fugiat excepturi dignissimos, consequuntur inventore
+          laudantium beatae et! Quam, minus esse. m.. <br> VISITANOS Y ESCRIBENOS EN NUESTRAS REDES
+          SOCIALES: ⬇️</p>
+        <div class="iconos-redes-sociales-conocenos d-flex flex-wrap align-items-center justify-content-center">
+          <!-- los iconos van a tener enlaces -->
+          <a href="https://twitter.com/Rosalindaaa_06procesando mensaje y ataque 274
+          procesando mensaje y ataque 275" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-twitter-x" ></i>
+          </a>
+          <a href="https://www.instagram.com/deysi.postresitos12/" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-instagram" style="color: rgb(172, 0, 0);"></i>
+          </a>
+          <a href="https://www.facebook.com/deysi.monjachaponan" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-facebook" style="color: rgb(25, 0, 248);"></i>
+          </a>
+          <a href="https://www.tiktok.com/@rosalindaaaa_cha" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-tiktok"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- CONTACTO (CONOCENOS) ------------>
+  <section class="contacto" style="background-color: black; color: white">
+    <div class="container">
+      <div class="containter text-center rectangulo d-flex justify-content-evenly">
+        <div class="row">
+          <div class="col-sm-12 col-md-4 col seccion-titulo" style="font-family: 'Pacifico', cursive;">
+            ¡ Hablemos !
+          </div>
+          <div class="col-sm-12 col-md-4 descripcion">
+            ¡ Contactame para regalar el mejor postre a esa persona especial !
+          </div>
+          <div class="col-sm-12 col-md-4 ">
+            <!-- crear un enlace para abrir la aplicación de correo del usuario -->
+            <a href="https://www.messenger.com/t/100033512561779/" target="_blank" rel="noopener noreferrer">
+              <button type="button">
+                contacto
+                <i class="bi bi-messenger"></i>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- PIE DE PÁGINA / FOOTER ------------------ -->
+  <footer class="d-flex flex-column align-items-center justify-content-center" style="background-color: black;">
+    <!-- incluyendo elementos e iconos     -->
+    <p class="footer-texto text-center"> Datos y redes de contacto para el soporte de la página web:<br>¡Da vida a tu
+      proyecto junto a mi! <br> ⬇️ </p>
+    <!-- contenedor para los iconos de las redes sociales -->
+    <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+      <!-- los iconos van a tener enlaces -->
+      <a href="https://twitter.com/ChaponanWill" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-twitter-x"></i>
+      </a>
+      <a href="https://instagram.com/ChaponanWill" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-instagram"></i>
+      </a>
+      <a href="https://github.com/ChaponanWill" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-github"></i>
+      </a>
+      <a href="https://facebook.com/ChaponanWill" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-facebook"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/chaponanWill" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-linkedin"></i>
+      </a>
+    </div>
+    <!-- crear estilo de derecho de autor -->
+    <div class="derechos-de-autor">creado por @chaponanWill (2023) &#169;</div>
+  </footer>
+
+  <!-- Es recomendable colocar el bootstrap.js antes del body ------------ -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
